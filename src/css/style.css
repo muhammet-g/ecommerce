@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url(/src/fonts/JF-Flat-regular.eot) ;
+  scr :url(/src/fonts/JF-Flat-regular.eot?#iefix)format('embedde-opentype'),
+  url("/src/fonts/JF-Flat-regular.svg#JF Flat Regular") format('svg') ,
+  url(/src/fonts/JF-Flat-regular.woff) format('woff'), 
+  url(/src/fonts/JF-Flat-regular.ttf) format('truetype');
+
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  font-family:"JF Flat Regular" , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+.custom-navbar{
+  padding: 15px 0;
+  border-bottom: 1px solid #f7f8f3;
+  background-color: #fff;
+  width: 100%;
+}
+
+.custom-form-control,
+.custom-btn{
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #868686;
+  height: 38px;
+  padding: 6px 16px 7px;
+  transition: all ease 0.4s;
+}
+.custom-btn {
+  border-right: 0 !important;
+  border-radius: 0 !important;
+}
+.custom-btn:hover,
+.custom-btn:focus{
+  background-color: #d4d4d4;
+  color: #ff3956;
+  border: 1px solid #8c8c8c ;
+}
+
+.custom-dropdown-menu {
+  border-radius: 2;
+  box-shadow: 2 2 5 0 #8c8c8c ;
+  color: #868686 ;
+}
+
+button.search-btn {
+  background-color: #ff3956;
+  color: #fff;
+  padding: 5px 15px 7px;
+  height: 38px;
+  width: 65px;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all ease 0.4s;
+  border-color: #ff3956;
+}
+
+button.search-btn:hover,
+button.search-btn:hover:focus,
+button.search-btn:active:focus,
+button.search-btn:active:hover,
+button.search-btn:active,
+button.search-btn:focus {
+  background-color: #dd1f3c;
+  border-color: #dd1f3c;
+  color: #fff;
+}
+
+.navbar-nav li.active a.nav-link {
+  border-bottom: 1px solid #ff3956;
+  color: #ff3956;
+  font-weight: 700 ;
+}
+
+.navbar-nav li.active:hover a.nav-link {
+  background-color: #e7e7e7;
+}
+.custom-dropdown-menu li a {
+  transition: 0.4s all ease;
+}
+.custom-dropdown-menu li:hover a {
+  background-color: #ff3956;
+}
+
+.custom-navbar .btn-icon {
+  padding: 5px 10px ;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #d4d4d4;
+  margin-right: 15px;
+} 
+
+.custom-form-control:focus {
+  border-color: #ff3956;
+  box-shadow: 0 0 2px 0 #ff3956;
+  outline: none;
+}
