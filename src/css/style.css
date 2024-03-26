@@ -15,6 +15,7 @@
   font-style: normal;
 }
 
+
 body {
   font-family:"JF Flat Regular" , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
@@ -80,33 +81,140 @@ button.search-btn:focus {
   color: #fff;
 }
 
-.navbar-nav li.active a.nav-link {
-  border-bottom: 1px solid #ff3956;
+.custom-navbar .navbar-nav li.active a.nav-link {
   color: #ff3956;
-  font-weight: 700 ;
+  font-weight: 700;
+  border-bottom: 1px solid #ff3956;
 }
 
-.navbar-nav li.active:hover a.nav-link {
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
   background-color: #e7e7e7;
 }
 .custom-dropdown-menu li a {
   transition: 0.4s all ease;
 }
-.custom-dropdown-menu li:hover a {
-  background-color: #ff3956;
+
+.custom-dropdown-menu li a:hover
+{
+  background-color: #ffe7ea;
 }
 
 .custom-navbar .btn-icon {
-  padding: 5px 10px ;
+  padding: 5px 10px;
+  color: #777;
+  border: 1px solid #ddd;
   background-color: transparent;
-  font-size: 14px;
   border-radius: 2px;
-  border: 1px solid #d4d4d4;
+  font-size: 14px;
   margin-right: 15px;
-} 
+}
+#carousel-featured .carousel-control-prev .fa-chevron-right,
+#carousel-featured .carousel-control-next .fa-chevron-left {
+    color: #868686;
+    font-size: 38px;
+}
 
+.carousel-control-next, .carousel-control-prev {
+  width:4% !important ;
+}
 .custom-form-control:focus {
-  border-color: #ff3956;
-  box-shadow: 0 0 2px 0 #ff3956;
+  border-color: #ff3956 ;
+  box-shadow: 0 0 2px 0 #ff3956 ;
   outline: none;
 }
+
+/*! قسم عارض الشرائح */
+#carousel-featured {
+  background-color: #f7f8f3;
+  height: 400px;
+  padding-top: 25px;
+}
+
+#carousel-featured .carousel-item img{
+  height: 375px;
+}
+
+#carousel-featured .product-details {
+  border: 1px solid #dddddb;
+  background-color: #f7f8f3;
+  padding: 20px;
+  height: 200px;
+  position: relative;
+  margin-top: 15px;
+}
+#carousel-featured .product-details  h1 {
+  font-weight: 700;
+  font-size: 175%;
+  margin-top: 18px;
+}
+.product-details .product-category {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 1px solid #dddddb;
+  background-color: #f7f8f3;
+  padding: 10px;
+}
+
+.custom-btn-outline-warning {
+  background-color: transparent;
+  color: #ffca2c;
+  border-color: #ffca2c;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:hover:focus,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:active:hover,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:focus {
+  color: #d86d07 !important;
+  border-color: #d86d07 !important;
+}
+
+
+.sale {
+  background-color: #53ccd7;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sale.large {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 35px;
+  line-height: 90%;
+  font-size: 130%;
+  transform: rotate(-45deg);
+  flex-direction: column;
+}
+.sale.large span {
+  display: block;
+}
+
+.custom-carousel-indicators-primary {
+  height: 70px !important;
+  width: 70px !important;
+  opacity: 1 !important;
+  border: 2px solid #dddddb !important;
+  margin: 0 !important;
+  margin-left: 5px !important;
+}
+
+.custom-carousel-indicators-primary.active {
+  border-color: #f8ad47 !important;
+}
+.custom-carousel-indicators {
+  right: 56%;
+  top: 210px;
+  margin-left: 7% !important;
+  margin-right: 7% !important;
+}
+
