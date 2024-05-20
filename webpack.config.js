@@ -1,27 +1,27 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   entry: {
-    app: './src/index.js'
+    app: "./src/index.js",
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.js",
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, "public"),
     },
     hot: false,
     port: 9000,
     open: true,
     devMiddleware: {
       writeToDisk: true,
-    }
+    },
   },
   module: {
     rules: [
@@ -29,20 +29,21 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
         options: {
-          minimize : true ,
+          minimize: true,
         },
       },
       {
         test: /\.css$/i,
-        exclude :/bootstrap\.min\.css$/i,
+        exclude: /bootstrap\.min\.css$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              esModule : false,
+              esModule: false,
             },
-          }
-          , "css-loader"],
+          },
+          "css-loader",
+        ],
       },
       {
         test: /bootstrap\.min\.css$/i,
@@ -50,25 +51,25 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              esModule : false,
+              esModule: false,
             },
-          }
-          , "rtlcss-loader"
-        ]
+          },
+          "rtlcss-loader",
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename : './images/[name][ext]'
-        }
+          filename: "./images/[name][ext]",
+        },
       },
       {
         test: /\.(svg|eot|woff|woff2|ttf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename : './fonts/[name][ext]'
-        }
+          filename: "./fonts/[name][ext]",
+        },
       },
     ],
   },
@@ -76,13 +77,19 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/index.html"
+      template: "./src/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "checkout.html",
+      template: "./src/checkout.html",
     }),
     new MiniCssExtractPlugin({
-      filename :  "style.css"
+      filename: "style.css",
     }),
-    new CssMinimizerPlugin({
-      
-    })
-  ]
+    new CssMinimizerPlugin({}),
+  ],
 };
