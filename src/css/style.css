@@ -619,8 +619,97 @@ h1.custom-heading {
   width: 98%;
 }
 /* payment page end */
+/* search page start */
+#form-advanced-search {
+  border: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+  height: fit-content;
+}
+#form-advanced-search .panel {
+  border: none;
+  padding: 5px;
+}
+#form-advanced-search .panel .card-header {
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+}
+
+#form-advanced-search label {
+  cursor: pointer;
+}
+.custom-list-group {
+  border-bottom: 1px solid #ebebeb;
+}
+.custom-list-group .list-group-item {
+  border: none;
+}
+
+.custom-pagination .page-link {
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  border: 1px solid #ebebeb !important;
+  width: 32px !important;
+  height: 32px !important;
+  color: #c2c2c2;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-pagination {
+  display: flex;
+  justify-content: center;
+}
+/* .custom-pagination .page-item, */
+.custom-pagination .page-item.active .page-link {
+  background-color: #f8ad47;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.custom-pagination .page-link:active,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:hover {
+  color: #f8ad47 !important;
+  background-color: #fff !important;
+  border-color: #f8ad47 !important;
+}
+/* search page end */
+
+/* صفحة التواصل */
+
+#map {
+  padding: 0;
+}
+
+#contact-options h4 {
+  font-size: 18px;
+}
+
+#contact-info .fa-lg {
+  color: #f3af41;
+  margin: 10px 0px 0px 10px;
+}
+
+#contact-options textarea {
+  height: 105px !important;
+}
+
 /* media setting */
 @media (max-width: 575.98px) {
+  .col-md-4.col-sm-6 {
+    max-width: fit-content;
+  }
+  .custom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 767.98px) {
