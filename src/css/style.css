@@ -30,27 +30,6 @@ body {
   width: 100%;
 }
 
-.custom-form-control,
-.custom-btn {
-  border: 1px solid #e7e7e7;
-  border-radius: 2px;
-  box-shadow: none;
-  color: #868686;
-  height: 38px;
-  padding: 6px 16px 7px;
-  transition: all ease 0.4s;
-}
-.custom-btn {
-  border-right: 0 !important;
-  border-radius: 0 !important;
-}
-.custom-btn:hover,
-.custom-btn:focus {
-  background-color: #d4d4d4;
-  color: #ff3956;
-  border: 1px solid #8c8c8c;
-}
-
 .custom-dropdown-menu {
   border-radius: 2;
   box-shadow: 2 2 5 0 #8c8c8c;
@@ -117,11 +96,6 @@ button.search-btn:focus {
 .carousel-control-prev {
   width: 4% !important ;
 }
-.custom-form-control:focus {
-  border-color: #ff3956;
-  box-shadow: 0 0 2px 0 #ff3956;
-  outline: none;
-}
 
 /*! قسم عارض الشرائح */
 #carousel-featured {
@@ -154,22 +128,6 @@ button.search-btn:focus {
   border: 1px solid #dddddb;
   background-color: #f7f8f3;
   padding: 10px;
-}
-
-.custom-btn-outline-warning {
-  background-color: transparent;
-  color: #ffca2c;
-  border-color: #ffca2c;
-}
-
-.custom-btn-outline-warning:hover,
-.custom-btn-outline-warning:hover:focus,
-.custom-btn-outline-warning:active:focus,
-.custom-btn-outline-warning:active:hover,
-.custom-btn-outline-warning:active,
-.custom-btn-outline-warning:focus {
-  color: #d86d07 !important;
-  border-color: #d86d07 !important;
 }
 
 .sale {
@@ -243,27 +201,6 @@ button.search-btn:focus {
   margin-bottom: 25px;
 }
 
-.custom-thumbnail img {
-  height: 250px;
-  width: 100%;
-  max-width: 250px;
-}
-
-.custom-thumbnail {
-  border: 2px solid #eef8ea;
-  padding: 8px;
-  cursor: pointer;
-  transition: 0.3s all ease;
-  margin-bottom: 50px;
-}
-
-.custom-thumbnail:hover {
-  border-color: #53ccd7;
-}
-
-.custom-thumbnail h4 {
-  font-size: 18px;
-}
 .price {
   color: #53ccd7;
 }
@@ -288,20 +225,6 @@ button.search-btn:focus {
   opacity: 1;
 }
 
-.add-to-cart-btn {
-  background-color: #fff;
-  color: #53ccd7;
-  font-weight: 700;
-}
-.custom-thumbnail .sale {
-  position: absolute;
-  top: 14px;
-  left: 16px;
-  padding: 4px 10px;
-}
-.custom-thumbnail .sale::after {
-  content: "-";
-}
 .custom-carousel-indicators-2 {
   bottom: -8px !important;
 }
@@ -404,21 +327,6 @@ button.search-btn:focus {
   opacity: 0.6;
   border: none;
   height: 39px;
-}
-
-.custom-btn-warning {
-  color: #000;
-  background-color: #f7ab51;
-}
-
-.custom-btn-warning:hover,
-.custom-btn-warning:hover:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover,
-.custom-btn-warning:active,
-.custom-btn-warning:focus {
-  border-color: #d86d07 !important;
-  background-color: #d86d07;
 }
 
 #footer-copyright-social {
@@ -561,52 +469,16 @@ h1.custom-heading {
   border: 1px solid #ebebeb;
   margin-left: 20px;
 }
-.custom-tabel th,
-.custom-tabel td {
-  padding: 15px;
-  font-size: 120%;
-  vertical-align: middle;
-  border-bottom: 1px solid #ebebeb;
-  border-top: 1px solid #ebebeb;
-}
+
 .custom-media h4 {
   font-size: 18px;
   margin-bottom: 12px 0;
-}
-
-.custom-tabel th {
-  color: #c2c2c2;
-  font-weight: normal;
-}
-
-.custom-tabel th:first-child,
-.custom-tabel td:first-child {
-  width: 50%;
-}
-.custom-tabel th:not(:first-child),
-.custom-tabel td:not(:first-child) {
-  text-align: center;
-}
-
-.custom-tabel tfoot td {
-  border-bottom: none;
-  font-size: 150%;
 }
 
 #total-price-for-all-product {
   color: #000;
 }
 
-.costum-btn-outline-danger {
-  background-color: transparent;
-  border-color: #ff3956;
-  color: #ff3956;
-}
-
-.costum-btn-outline-danger:hover {
-  border-color: #b9001b;
-  color: #b9001b;
-}
 /* checkout page end */
 
 /* payment page start */
@@ -712,11 +584,6 @@ h1.custom-heading {
   }
 }
 
-@media (max-width: 991.98px) and (max-width: 767.98px) {
-  .custom-thumbnail img {
-    height: 200px;
-  }
-}
 @media (max-width: 767.98px) {
   #carousel-featured,
   #carousel-featured .product-details {

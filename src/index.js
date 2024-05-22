@@ -1,8 +1,9 @@
 window.bootstrap = require("bootstrap/dist/js/bootstrap.bundle.js");
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./sass/custom.scss";
 import "./css/style.css";
 import "@fortawesome/fontawesome-free/js/all.min";
 import "/node_modules/sweetalert2/dist/sweetalert2.all.min";
+import "./sass/style.scss";
 
 document
   .querySelectorAll('[data-bs-toggle="tooltip"]')
